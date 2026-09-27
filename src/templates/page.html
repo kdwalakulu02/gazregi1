@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{PAGE_DESCRIPTION}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{{STRUCTURED_DATA}}</script>
+</head>
+<body>
+  <header class="masthead" data-pagefind-ignore>
+    <a class="wordmark" href="/" aria-label="GazetteRegistry home">Gazette<span>Registry</span></a>
+    <a class="back-link" href="/">Back to search <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="record-workspace">
+    <nav class="breadcrumbs" aria-label="Breadcrumb" data-pagefind-ignore>{{BREADCRUMBS}}</nav>
+    <div class="record-kicker">SRI LANKA GAZETTE <span>·</span> NO. {{GAZETTE_NUMBER}}</div>
+    <h1>{{PAGE_HEADING}}</h1>
+    <div class="record-meta">
+      <span>Published {{PUBLICATION_DATE}}</span>
+      <span>Physical PDF page {{PHYSICAL_PAGE}}</span>
+      <span>{{PRINTED_PAGE}}</span>
+    </div>
+    <section class="record-source" data-pagefind-ignore>
+      <div><span class="record-source-label">OFFICIAL SOURCE</span><p>{{SOURCE_DETAIL}}</p></div>
+      {{SOURCE_LINK}}
+    </section>
+    <p class="issue-link-line" data-pagefind-ignore><a href="{{ISSUE_PATH}}">View all pages in Gazette No. {{GAZETTE_NUMBER}} →</a></p>
+    <section class="transcription" data-pagefind-body>
+      <h2>Extracted page text</h2>
+      <pre>{{PAGE_TEXT}}</pre>
+    </section>
+  </main>
+  <footer class="site-footer" data-pagefind-ignore>
+    <span>GazetteRegistry is an independent search and information service, not affiliated with the Government of Sri Lanka.</span>
+    <span>Record {{PAGE_UID}}</span>
+  </footer>
+</body>
+</html>

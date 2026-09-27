@@ -1,0 +1,14 @@
+{
+  "issue_id": "LK-2026-2502",
+  "country": "LK",
+  "gazette_no": "2502",
+  "gazette_type": "regular",
+  "edition": "E",
+  "publication_date": "2026-08-14",
+  "source_url": null,
+  "source_file": "Gazette-2026-08-14-E.pdf",
+  "page_count": 22,
+  "parser_version": "0.1.0",
+  "extraction_method": "pymupdf",
+  "extracted_at": "2026-09-27T09:50:03+00:00"
+}

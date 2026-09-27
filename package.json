@@ -1,0 +1,11 @@
+{
+  "name": "gazetteregistry",
+  "private": true,
+  "scripts": {
+    "build": "python scripts/build_site.py && pagefind --site dist",
+    "serve": "python -m http.server 4173 --directory dist"
+  },
+  "devDependencies": {
+    "pagefind": "^1.3.0"
+  }
+}

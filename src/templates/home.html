@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{PAGE_DESCRIPTION}}">
+  <title>{{PAGE_TITLE}}</title>
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="module" src="/assets/app.js"></script>
+  <script type="application/ld+json">{{STRUCTURED_DATA}}</script>
+</head>
+<body>
+  <header class="masthead" data-pagefind-ignore>
+    <a class="wordmark" href="/" aria-label="GazetteRegistry home">Gazette<span>Registry</span></a>
+    <div class="masthead-note"><span class="status-dot"></span> INDEPENDENT PUBLIC RECORD INDEX</div>
+  </header>
+
+  <main class="workspace">
+    <section class="search-panel" aria-labelledby="page-title" data-pagefind-ignore>
+      <div class="issue-kicker"><span>SRI LANKA</span><span class="kicker-divider">/</span><span>LATEST GAZETTE NO. {{GAZETTE_NUMBER}}</span></div>
+      <h1 id="page-title">Find the record.</h1>
+      <p class="issue-date">Latest issue published {{PUBLICATION_DATE}} <span class="issue-separator">·</span> {{PAGE_COUNT}} searchable pages across {{ISSUE_COUNT}} issues</p>
+
+      <form id="search-form" role="search">
+        <label class="field-label" for="search-query">Search indexed Gazettes</label>
+        <div class="search-control">
+          <input id="search-query" name="q" type="search" placeholder="Name, company, tender reference, topic..." autocomplete="off">
+          <button type="submit">Search <span aria-hidden="true">→</span></button>
+        </div>
+      </form>
+
+      <div class="results-heading">
+        <h2 id="results-title">Pages from indexed issues</h2>
+        <p id="result-count" aria-live="polite">{{PAGE_COUNT}} pages</p>
+      </div>
+      <div id="search-results" class="result-list" aria-live="polite">
+        {{SAMPLE_CARDS}}
+      </div>
+    </section>
+
+    <aside class="issue-rail" data-pagefind-ignore>
+      <div class="rail-index">ISSUE FILE</div>
+      <dl>
+        <div><dt>Latest Gazette</dt><dd>No. {{GAZETTE_NUMBER}}</dd></div>
+        <div><dt>Latest publication</dt><dd>{{PUBLICATION_DATE}}</dd></div>
+        <div><dt>Edition</dt><dd>{{EDITION}}</dd></div>
+        <div><dt>Issues indexed</dt><dd>{{ISSUE_COUNT}}</dd></div>
+        <div><dt>Pages indexed</dt><dd>{{PAGE_COUNT}}</dd></div>
+      </dl>
+      <div class="source-state">
+        <span class="source-state-mark"></span>
+        <p>{{SOURCE_STATUS}}</p>
+      </div>
+      <p class="rail-caption">Exact source pages are preserved. Notice boundaries and categories are left unassigned until verified.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer" data-pagefind-ignore>
+    <span>GazetteRegistry is an independent search and information service, not affiliated with the Government of Sri Lanka.</span>
+    <span>Source documents remain with their official publisher.</span>
+  </footer>
+</body>
+</html>

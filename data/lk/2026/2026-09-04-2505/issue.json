@@ -1,0 +1,14 @@
+{
+  "issue_id": "LK-2026-2505",
+  "country": "LK",
+  "gazette_no": "2505",
+  "gazette_type": "extraordinary",
+  "edition": "Eii",
+  "publication_date": "2026-09-04",
+  "source_url": null,
+  "source_file": "Gazette-2026-09-04-Eii.pdf",
+  "page_count": 29,
+  "parser_version": "0.1.0",
+  "extraction_method": "pymupdf",
+  "extracted_at": "2026-09-27T10:02:16+00:00"
+}
